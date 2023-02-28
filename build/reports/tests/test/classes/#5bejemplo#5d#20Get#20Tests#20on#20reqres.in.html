@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class [ejemplo] Get Tests on reqres.in</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class [ejemplo] Get Tests on reqres.in</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/[ejemplo] Get Tests on reqres.html">[ejemplo] Get Tests on reqres</a> &gt; in</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.211s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[1:5] Get users list</td>
+<td class="success">1.211s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>10:01:56.455 [Test worker] DEBUG karate.org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+10:01:56.464 [Test worker] DEBUG karate.org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+10:01:56.466 [Test worker] DEBUG com.intuit.karate - request:
+1 &gt; GET https://reqres.in/api/users/2
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:01:56.468 [Test worker] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}-&gt;https://reqres.in:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+10:01:56.479 [Test worker] DEBUG karate.org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}-&gt;https://reqres.in:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+10:01:56.480 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Opening connection {s}-&gt;https://reqres.in:443
+10:01:56.610 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to reqres.in/172.67.222.36:443
+10:01:56.610 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to reqres.in/172.67.222.36:443 with timeout 30000
+10:01:56.735 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+10:01:56.736 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+10:01:56.736 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+10:01:57.069 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+10:01:57.070 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+10:01:57.070 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+10:01:57.070 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=sni.cloudflaressl.com, O=&quot;Cloudflare, Inc.&quot;, L=San Francisco, ST=California, C=US
+10:01:57.071 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.reqres.in, reqres.in, sni.cloudflaressl.com]
+10:01:57.071 [Test worker] DEBUG karate.org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Cloudflare Inc ECC CA-3, O=&quot;Cloudflare, Inc.&quot;, C=US
+10:01:57.074 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.55.54:63010&lt;-&gt;172.67.222.36:443
+10:01:57.074 [Test worker] DEBUG karate.org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+10:01:57.074 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/users/2 HTTP/1.1
+10:01:57.074 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+10:01:57.076 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+10:01:57.078 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; GET /api/users/2 HTTP/1.1
+10:01:57.078 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; Host: reqres.in
+10:01:57.078 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; Connection: Keep-Alive
+10:01:57.078 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)
+10:01:57.078 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip,deflate
+10:01:57.079 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;GET /api/users/2 HTTP/1.1[\r][\n]&quot;
+10:01:57.080 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Host: reqres.in[\r][\n]&quot;
+10:01:57.080 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+10:01:57.080 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_321)[\r][\n]&quot;
+10:01:57.080 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+10:01:57.081 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+10:01:57.200 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Date: Fri, 11 Mar 2022 15:01:59 GMT[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Etag: W/&quot;118-pbdwwFo9SKNhD3Lx5iHJyngpq00&quot;[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Via: 1.1 vegur[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Cache-Control: max-age=14400[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;CF-Cache-Status: HIT[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Age: 6945[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;[\r][\n]&quot;
+10:01:57.201 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=1rWdMUmeZIpDayYaqvRVgvxHA1tqDFhHBXgFbW4x3sBfRmsI8bA7%2FzfY2mkPdinOtcHIFgiOR0s9RuQERSXlNgoDrLFoXyXRODvwR0Kr8tSDZzBkToAQT26AmsM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}[\r][\n]&quot;
+10:01:57.202 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}[\r][\n]&quot;
+10:01:57.202 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Vary: Accept-Encoding[\r][\n]&quot;
+10:01:57.202 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Server: cloudflare[\r][\n]&quot;
+10:01:57.202 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;CF-RAY: 6ea52b245e858224-IAD[\r][\n]&quot;
+10:01:57.202 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Encoding: gzip[\r][\n]&quot;
+10:01:57.202 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400[\r][\n]&quot;
+10:01:57.202 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+10:01:57.202 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;d0[\r][\n]&quot;
+10:01:57.202 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]m[0x8e][0xb1]j[0xc3]0[0x14]E&#x7f;E[0xbd]Y[0x15][0x1b]2j[0xea][0xdc]1[0x14]:[0x96]W[0xfb][0xda]QjK[0xca][0xd3][0xb3][0x13][0x8][0xfe][0xf7][0x92]R[0xda][0xa5][0xeb][0xe5][0x9c][0xc3][0xbd][0xa3][0x17][0x13][0x84];b[0x8f]p[0xf0][0xe0],qB[0xc0]Y[0x12][0xad][0xb9]RV[0xea][0xb3][0xf2][0xa2][0xac]ML[0xf0][0x18][0xa2]V{O2[0x13][0x1]/[0xf][\n]&quot;
+10:01:57.202 [Test worker] DEBUG karate.org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x1e][0x93][0xfc]mo[0xdf][0xe]&lt;d[0x15][0x13]E[0xc0][0xc9][0xac][0xd4][0xd0][0xb6][0xbf][0x99]6[0xce]c;H[0xc7][0xda][0x1e][0xf6]q[0x96][0x91][0xcd][0xb9][0x8c][0xd8]&lt;[0xea]RJV{[0x1c]Zt[0xfa][0xd7][0xdd][0xfd]0[0xfb][0x13][0xa5][0x8f]i[0x84][0x87][0xf1]f[0x8]x[0xcd][0xee][0x93],[0xee][0xc8][0xcb][0x91][0xd5][\r]Jz[0xd7][0xe5]d[0x1a]?[0x16][0x8b]9Ug[0xf9]*[0xda]WW[0xa9]+[0xd5]u[0xb9]Zu[0xa2]tR[0x8a][0xb2][0x8b]b[0xec][0x9f][0xb0]m_[0xb][0x8c][0xc5][0xb5][0x18][0x1][0x0][0x0][\r][\n]&quot;
+10:01:57.206 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
+10:01:57.206 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Date: Fri, 11 Mar 2022 15:01:59 GMT
+10:01:57.206 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Type: application/json; charset=utf-8
+10:01:57.206 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Transfer-Encoding: chunked
+10:01:57.206 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Connection: keep-alive
+10:01:57.206 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; X-Powered-By: Express
+10:01:57.206 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Access-Control-Allow-Origin: *
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Etag: W/&quot;118-pbdwwFo9SKNhD3Lx5iHJyngpq00&quot;
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Via: 1.1 vegur
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Cache-Control: max-age=14400
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; CF-Cache-Status: HIT
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Age: 6945
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=1rWdMUmeZIpDayYaqvRVgvxHA1tqDFhHBXgFbW4x3sBfRmsI8bA7%2FzfY2mkPdinOtcHIFgiOR0s9RuQERSXlNgoDrLFoXyXRODvwR0Kr8tSDZzBkToAQT26AmsM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Vary: Accept-Encoding
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Server: cloudflare
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; CF-RAY: 6ea52b245e858224-IAD
+10:01:57.207 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Encoding: gzip
+10:01:57.208 [Test worker] DEBUG karate.org.apache.http.headers - http-outgoing-0 &lt;&lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+10:01:57.213 [Test worker] DEBUG karate.org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+10:01:57.239 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 749
+1 &lt; 200
+1 &lt; Date: Fri, 11 Mar 2022 15:01:59 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;118-pbdwwFo9SKNhD3Lx5iHJyngpq00&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 6945
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=1rWdMUmeZIpDayYaqvRVgvxHA1tqDFhHBXgFbW4x3sBfRmsI8bA7%2FzfY2mkPdinOtcHIFgiOR0s9RuQERSXlNgoDrLFoXyXRODvwR0Kr8tSDZzBkToAQT26AmsM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6ea52b245e858224-IAD
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;data&quot;:{&quot;last_name&quot;:&quot;Weaver&quot;,&quot;id&quot;:2,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/2-image.jpg&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;},&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
+10:01:57.286 [Test worker] INFO com.intuit.karate - [print] {
+  &quot;data&quot;: {
+    &quot;last_name&quot;: &quot;Weaver&quot;,
+    &quot;id&quot;: 2,
+    &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;,
+    &quot;first_name&quot;: &quot;Janet&quot;,
+    &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;
+  },
+  &quot;support&quot;: {
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;
+  }
+}
+ 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 11/03/2022 10:01:57 AM</p>
+</div>
+</div>
+</body>
+</html>
